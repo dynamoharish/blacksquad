@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<cherrytree>
+  <bookmarks list=""/>
+  <node name="PENTESTING" unique_id="4" prog_lang="custom-colors" tags="" readonly="0" nosearch_me="0" nosearch_ch="0" custom_icon_id="0" is_bold="1" foreground="" ts_creation="1673856420" ts_lastsave="1673856478">
+    <node name="Passive Reconaissance" unique_id="5" prog_lang="custom-colors" tags="" readonly="0" nosearch_me="0" nosearch_ch="0" custom_icon_id="0" is_bold="0" foreground="" ts_creation="1673856458" ts_lastsave="1673856458"/>
+    <node name="Enumeration and Scanning" unique_id="6" prog_lang="custom-colors" tags="" readonly="0" nosearch_me="0" nosearch_ch="0" custom_icon_id="0" is_bold="0" foreground="" ts_creation="1673856478" ts_lastsave="1673946117">
+      <node name="Host" unique_id="7" prog_lang="custom-colors" tags="" readonly="0" nosearch_me="0" nosearch_ch="0" custom_icon_id="0" is_bold="0" foreground="" ts_creation="1673856887" ts_lastsave="1673858557">
+        <rich_text>	
+	Syntax: host domain
+	
+	Example: host google.com
+	
+	Execute DNS Records using Host Command:
+	
+	host -t &lt;dns record&gt; domain
+	
+	Example:host -t mx google.com
+		
+	To list the ns record:
+	
+	host -t ns domain
+	
+	host -l domain nameserver	
+	
+				
+	DNS RECORDS:
+				
+	A -  ipv4 Address for domain
+				 
+	AAAA -  ipv6 Address for domain
+				
+	MX - Mail Record
+				
+	CNAME - Canonical name (Aliases)
+	
+	NS -  nameserver (NS) 
+	
+	PTR  -	 A pointer (PTR) record provides a domain name for reverse lookup. </rich_text>
+      </node>
+      <node name="nslookup,dig" unique_id="8" prog_lang="custom-colors" tags="" readonly="0" nosearch_me="0" nosearch_ch="0" custom_icon_id="0" is_bold="0" foreground="" ts_creation="1673859544" ts_lastsave="1673859955">
+        <rich_text>
+nslookup:
+
+nslookup &lt;domain name&gt;
+
+Example: nslookup google.com
+
+To execute dns records:
+
+nslookup -query=&lt;dns record&gt; &lt;domain name&gt;
+
+Example: nslookup -query=aaaa google.com
+
+dig:
+
+dig &lt;domain name&gt;
+
+Example: dig google.com
+
+To execute dns records:
+
+dig &lt;dns record&gt; &lt;domain name&gt;
+
+Example: dig mx google.com
+
+To list the zone transfer records from nameserver:
+
+dig ns &lt;domain name&gt;
+
+Example: dig ns google.com
+
+dig axfr @nserver &lt;domain name&gt;</rich_text>
+      </node>
+      <node name="DNS recon" unique_id="9" prog_lang="custom-colors" tags="" readonly="0" nosearch_me="0" nosearch_ch="0" custom_icon_id="0" is_bold="0" foreground="" ts_creation="1673946117" ts_lastsave="1673946120">
+        <rich_text>dnsrecon</rich_text>
+      </node>
+    </node>
+  </node>
+</cherrytree>
